@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-orange-900">
+    <!-- Header -->
+<header class="w-full bg-white p-4">
+    <div class="flex flex-row justify-between items-center">
+        <div>
+            <a class="font-bold text-4xl" href="#">LOGO</a>
+        </div>
+        <div class="hidden md:flex">
+            <ul>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Catalog</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="hidden md:flex">
+            <ul>
+                <li><a href="">User</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="">Search</a></li>
+            </ul>
+        </div>
+        <div class="flex flex-col md:hidden">
+            <button class="mobile-menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke-width="1.5" 
+                stroke="currentColor" 
+                class="w-8 h-8">
+                <path 
+                stroke-linecap="round" 
+                stroke-linejoin="round" 
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>   
+            </button>
+        </div>
+    </div>
+    <div class="hidden mobile-menu absolute right-0 top-0 z-10 w-2/3 bg-white">
+        <button class="close-mobile-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>              
+        </button>
+        <ul class="">
+            <li class="active"><a href="index.html" class="">Home</a></li>
+            <li><a href="#services" class="">Services</a></li>
+            <li><a href="#about" class="">About</a></li>
+            <li><a href="#contact" class="">Contact Us</a></li>
+        </ul>
+    </div>
+</header>
+    <!-- /Header -->
+</body>
+<script src="./index.js"></script>
+</html>
